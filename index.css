@@ -1,0 +1,134 @@
+
+.circle {
+  position: relative;
+  z-index: 5;
+  top: -3.2in;
+  left: .1in;
+  height: 100px;
+  width: 100px;
+  background-color: #944f4f;
+  border-radius: 50%;
+}
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center; 
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    background: rgb(225, 233, 236);
+  }
+  
+  .footer {
+    background: rgb(93, 114, 120);
+  }
+  
+  .main {
+    text-align: left;
+    background: rgb(16, 157, 204);
+  }
+  
+  .aside-1 {
+    background: deepskyblue;
+  }
+  
+  .aside-2 {
+    background: deepskyblue;
+  }
+  
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
+  
+  body {
+    padding: 2em; 
+  }
+  .flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .flex-item {
+    background: rgb(86, 50, 134);
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    /* This aligns items to the end line on main-axis */
+    /*justify-content: flex-end;*/
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+  }
+.header {
+    display: flex;
+    Text-align: right;
+    float: right;
+    list-style: none;
+    gap: 10px;
+}
+#box1 {
+    text-size-adjust: 40px;
+    padding: 10px;
+    background-color: rgb(142, 142, 183);
+    display: inline-block;
+    width: 500px;
+}
+#box2 {
+    text-size-adjust: 40px;
+    padding: 10px;
+    background-color: rgb(142, 142, 183);
+    display: inline-block;
+    width: 150px;
+}
+#box3 {
+    text-size-adjust: 40px;
+    padding: 10px;
+    background-color: rgb(142, 142, 183);
+    display: inline-block;
+    width: 300px;
+}
+#box4 {
+    text-size-adjust: 40px;
+    padding: 10px;
+    display: inline-block;
+    width: 500px;
+}
