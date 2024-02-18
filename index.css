@@ -9,6 +9,7 @@
   background-color: #944f4f;
   border-radius: 50%;
 }
+
 .wrapper {
     display: flex;  
     flex-flow: row wrap;
@@ -109,31 +110,4 @@
     float: right;
     list-style: none;
     gap: 10px;
-}
-#box1 {
-    text-size-adjust: 40px;
-    padding: 10px;
-    background-color: rgb(142, 142, 183);
-    display: inline-block;
-    width: 500px;
-}
-#box2 {
-    text-size-adjust: 40px;
-    padding: 10px;
-    background-color: rgb(142, 142, 183);
-    display: inline-block;
-    width: 150px;
-}
-#box3 {
-    text-size-adjust: 40px;
-    padding: 10px;
-    background-color: rgb(142, 142, 183);
-    display: inline-block;
-    width: 300px;
-}
-#box4 {
-    text-size-adjust: 40px;
-    padding: 10px;
-    display: inline-block;
-    width: 500px;
 }
