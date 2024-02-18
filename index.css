@@ -88,10 +88,7 @@
     font-weight: bold;
     font-size: 3em;
     text-align: center;
-  }
-  .flex-item {
-    background:rgb(86, 50, 134)
-    transition: background 4s 1s;
+    transition: background 5s;
   }
   
   .flex-item:hover {
